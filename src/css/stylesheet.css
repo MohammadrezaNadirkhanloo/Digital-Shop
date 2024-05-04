@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../../assets/font/Vazir.eot');
+    src: url('../../assets/font/Vazir.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/font/Vazir.woff2') format('woff2'),
+        url('../../assets/font/Vazir.woff') format('woff'),
+        url('../../assets/font/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
