@@ -1,5 +1,6 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}"],
+  content: ["./public/**/*.html"],
   theme: {
     container: {
       center: true,
@@ -7,7 +8,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Vazir"],
+        sans: ["Vazirmatn"],
+        serif: ["Vazirmatn FD"],
       },
     },
   },
