@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.html"],
+  experimental: {
+    optimizeUniversalDefaults: true,
+  },
   theme: {
     container: {
       center: true,
@@ -10,6 +13,9 @@ module.exports = {
       fontFamily: {
         sans: ["Vazirmatn"],
         serif: ["Vazirmatn FD"],
+      },
+      fontSize: {
+        min: "10px",
       },
     },
   },
