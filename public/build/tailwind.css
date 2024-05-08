@@ -804,6 +804,10 @@ video {
   margin-right: -0.125rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
