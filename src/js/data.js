@@ -11,7 +11,7 @@ const data = [
     title: "ساعت هوشمند سری",
     model: 7,
     price: "65,424,256",
-    Image: "../../assets/img/1.png",
+    Image: "./2.png",
   },
   {
     id: 3,
