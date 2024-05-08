@@ -11,14 +11,14 @@ const data = [
     title: "ساعت هوشمند سری",
     model: 7,
     price: "65,424,256",
-    Image: "./../../assets/img/2.png",
+    Image: "../../assets/img/2.png",
   },
   {
     id: 3,
     title: "ایفون",
     model: 12,
     price: "50,333,654",
-    Image: "assets/img/2.png",
+    Image: "../../assets/img/my-logo.png",
   },
   {
     id: 4,
