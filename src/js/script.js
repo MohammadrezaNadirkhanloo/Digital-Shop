@@ -98,7 +98,7 @@ data.map((item) => {
     <div class="bg-gray-50 p-2 rounded-xl shadow-xl flex flex-col">
     <div x-data="{show : false}" class="bg-zinc-200 rounded-lg shadow-md relative">
       <div class="flex justify-center">
-        <img src="${item.Image}" class="w-17 h-28" alt="" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShkn986PxxR7oBX0iUIOdz7PhVtlSgb5-Qnu_Mmd203g&s" class="w-17 h-28" alt="" />
       </div>
       <button
       @click="show = !show"
