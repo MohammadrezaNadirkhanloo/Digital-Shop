@@ -4,7 +4,7 @@ const data = [
     title: "ایفون",
     model: 6,
     price: "32,445,852",
-    Image: "https://github.com/MohammadrezaNadirkhanloo/Digital-Shop/blob/main/assets/img/11.png",
+    Image: "../../assets/img/11.png",
   },
   {
     id: 2,
