@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./build/tailwind.css" />
     <title>Document</title>
   </head>
-  <body class="bg-gray-300 space-y-4 scroll-smooth">
+  <body class="bg-gray-300 space-y-4 scroll-smooth flex flex-col min-h-screen">
     <header class="">
       <div class="container flex items-center justify-between mt-5 md:hidden">
         <img src="../assets/img/my-logo.png" class="w-8 h-8" />
@@ -91,7 +91,7 @@
         </div>
       </div>
     </header>
-    <section class="container space-y-5">
+    <section class="container space-y-5 grow">
       <div class="flex gap-2 md:hidden">
         <button
           class="inline-flex items-center bg-gray-50 p-1.5 rounded-lg w-full gap-3 hover:bg-gray-50/80 shadow-lg font-medium"
@@ -134,7 +134,9 @@
         </button>
       </div>
       <div class="grid grid-cols-12 grid-rows-[55px_minmax(50px,_1fr)] gap-5">
-        <div class="hidden md:block col-span-3 xl:col-span-2 row-span-2">
+        <div
+          class="hidden md:block col-span-3 xl:col-span-2 row-span-2 space-y-4"
+        >
           <div class="bg-gray-50 shadow-xl rounded-xl py-5 px-3 space-y-6">
             <div class="flex flex-col gap-5">
               <p class="text-orange-500 font-bold text-lg mb-1">دسته بندی</p>
@@ -207,10 +209,118 @@
             </div>
             <div>
               <p class="text-orange-500 font-bold text-lg mb-2">فیلتر</p>
-              <div></div>
+              <div class="space-سیy-3">
+                <div x-data="{show : false}">
+                  <div
+                    @click="show = !show"
+                    class="mb-1 flex items-center justify-between hover:bg-gray-100 p-1 cursor-pointer active:bg-gray-200/75 rounded-lg"
+                  >
+                    <p class="text-blue-950 font-medium">برند محصول</p>
+                    <svg
+                      :class="show ? 'rotate-180':''"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 transition-all delay-100"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div x-show="show" class="ps-2 gap-4 flex flex-col">
+                    <label class="cursor-pointer font-medium text-gray-600">
+                      <input
+                        type="checkbox"
+                        class="accent-orange-500"
+                        checked
+                      />
+                      ایفون
+                    </label>
+                    <label class="cursor-pointer font-medium text-gray-600">
+                      <input type="checkbox" class="accent-orange-500" />
+                      سامسونگ
+                    </label>
+                    <label class="cursor-pointer font-medium text-gray-600">
+                      <input type="checkbox" class="accent-orange-500" /> هواوی
+                    </label>
+                    <label class="cursor-pointer font-medium text-gray-600">
+                      <input type="checkbox" class="accent-orange-500" /> اوپو
+                    </label>
+                  </div>
+                </div>
+                <div x-data="{show : false}">
+                  <div
+                    @click="show = !show"
+                    class="mb-1 flex items-center justify-between hover:bg-gray-100 p-1 cursor-pointer active:bg-gray-200/75 rounded-lg"
+                  >
+                    <p class="text-blue-950 font-medium">رنگ محصول</p>
+                    <svg
+                      :class="show ? 'rotate-180':''"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 transition-all delay-100"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div x-show="show" class="ps-2 gap-4 flex flex-col">
+                    <label class="cursor-pointer font-medium text-gray-600">
+                      <input type="checkbox" class="accent-green-500" />
+                      سبز
+                    </label>
+                    <label class="cursor-pointer font-medium text-gray-600">
+                      <input type="checkbox" class="accent-orange-500" />
+                      نارنجی
+                    </label>
+                    <label class="cursor-pointer font-medium text-gray-600">
+                      <input type="checkbox" class="accent-red-500" /> قرمز
+                    </label>
+                    <label class="cursor-pointer font-medium text-gray-600">
+                      <input type="checkbox" class="accent-blue-500" /> ابی
+                    </label>
+                    <label class="cursor-pointer font-medium text-gray-600">
+                      <input type="checkbox" class="accent-violet-500" /> بنفش
+                    </label>
+                  </div>
+                </div>
+                <div x-data="{show : false}">
+                  <div
+                    @click="show = !show"
+                    class="mb-1 flex items-center justify-between hover:bg-gray-100 p-1 cursor-pointer active:bg-gray-200/75 rounded-lg"
+                  >
+                    <p class="text-blue-950 font-medium">محدوده قیمت</p>
+                    <svg
+                      :class="show ? 'rotate-180':''"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-4 h-4 transition-all delay-100"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div x-show="show" class="ps-2"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div></div>
+          <div
+            class="rounded-xl h-52 flex justify-center items-center bg-orange-50"
+          >
+            <p class="font-semibold text-lg">محل تبلیغات</p>
+          </div>
         </div>
         <div
           class="p-4 hidden md:block bg-white col-span-9 xl:col-span-10 rounded-xl"
@@ -281,7 +391,7 @@
         </div>
         <div class="col-span-12 md:col-span-9 xl:col-span-10">
           <div
-            class="grid grid-cols-2 gap-3 mb-20 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+            class="pb-20 md:pb-0 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
             x-data="{ datas: [
             {
               id: 1,
@@ -612,6 +722,35 @@
         </div>
       </div>
     </section>
+    <footer class="hidden md:block bg-gray-50 rounded-md  p-10">
+      <div class="container grid grid-cols-2">
+        <div>
+          <span
+            class="mb-5 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-orange-500 relative inline-block"
+          >
+            <span class="font-bold text-3xl relative text-white">دیجی شاپ</span>
+          </span>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+            از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+            سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+            متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+            درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با
+            نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+            خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید
+            داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به
+            پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی
+            سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+          </p>
+        </div>
+        <div class="flex flex-col items-center gap-4">
+          <a href="https://github.com/MohammadrezaNadirkhanloo">
+            <img src="../assets/img/my-logo.png" class="w-52 h-52" alt="">
+          </a>
+          <p>این سایت به عنوان نمونه کار ارائه شده است©</p>
+        </div>
+      </div>
+    </footer>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
