@@ -2,7 +2,6 @@
 module.exports = {
   content: ["./public/**/*.html", "./src/js/theme.js"],
   darkMode: "class",
-
   theme: {
     container: {
       center: true,
