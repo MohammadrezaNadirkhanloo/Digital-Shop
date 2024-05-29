@@ -1994,6 +1994,10 @@ video {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
+.dark\:hover\:bg-gray-700\/50:hover:is(.dark *) {
+  background-color: rgb(55 65 81 / 0.5);
+}
+
 .dark\:hover\:text-orange-400:hover:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(251 146 60 / var(--tw-text-opacity));
