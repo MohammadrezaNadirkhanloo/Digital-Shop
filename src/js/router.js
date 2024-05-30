@@ -1,27 +1,29 @@
+const titr = "Digishop"
+
 const router = {
   "/public/index.html": {
     template: "./index.html",
-    title: "",
+    title: `${titr}`,
   },
   "/public/mobile": {
     template: "./index.html",
-    title: "",
+    title: `${titr} | mobile`,
   },
   "/public/watch": {
     template: "./watch.html",
-    title: "",
+    title: `${titr} | watch`,
   },
   "/public/laptop": {
     template: "./laptop.html",
-    title: "",
+    title: `${titr} | laptop`,
   },
   "/public/sabad": {
     template: "./sabad.html",
-    title: "",
+    title: `${titr} | sabad`,
   },
   404: {
     template: "./404.html",
-    title: "",
+    title: `${titr} | 404`,
   },
 };
 

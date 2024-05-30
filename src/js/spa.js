@@ -21,6 +21,7 @@ async function location() {
   const idRemove = "theme-rep";
   html = html.replace(idRemove, "hidden");
   document.querySelector("#content").innerHTML = html;
+  document.title = route.title;
 }
 
 window.onpopstate = location;
