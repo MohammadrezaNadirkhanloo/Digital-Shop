@@ -21,7 +21,9 @@
   >
     <div id="content">
       <header>
-        <div class="container flex items-center justify-between mt-5 mb-3 md:hidden">
+        <div
+          class="container flex items-center justify-between mt-5 mb-3 md:hidden"
+        >
           <img src="../assets/img/my-logo.png" class="w-8 h-8" />
           <a
             href="/public/index.html"
@@ -150,6 +152,7 @@
 
             <span>فیلتر : اپل</span>
           </button>
+
         </div>
         <div class="grid grid-cols-12 grid-rows-[55px_minmax(50px,_1fr)] gap-5">
           <div
@@ -179,7 +182,7 @@
                     </svg>
                   </div>
                   <a
-                  href="/public/mobile"
+                    href="/public/mobile"
                     class="link-spa cursor-pointer hover:text-orange-500 dark:text-orange-500 hover:-translate-x-1.5 transition-all duration-200 text-orange-500"
                   >
                     تلفن همراه
@@ -201,7 +204,7 @@
                     </svg>
                   </div>
                   <a
-                  href="/public/laptop"
+                    href="/public/laptop"
                     class="link-spa cursor-pointer hover:text-orange-500 hover:-translate-x-1.5 transition-all duration-200"
                   >
                     لپ تاپ
@@ -223,11 +226,11 @@
                     </svg>
                   </div>
                   <a
-                  href="/public/watch"
+                    href="/public/watch"
                     class="link-spa cursor-pointer hover:text-orange-500 hover:-translate-x-1.5 transition-all duration-200"
                   >
                     ساعت هوشمند
-                </a>
+                  </a>
                 </div>
               </div>
               <div>
@@ -695,12 +698,12 @@
                         class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-500"
                       />
                       <div class="text-center">
-                        <a
-                          href="./aboutProduct.html"
-                          class="text-min font-medium text-orange-500 active:bg-orange-200 dark:active:bg-orange-400/45 p-2 rounded-lg hover:bg-orange-100 dark:hover:bg-orange-500/40 lg:text-base xl:px-5"
+                        <button
+                          
+                          class=" text-min font-medium text-orange-500 active:bg-orange-200 dark:active:bg-orange-400/45 p-2 rounded-lg hover:bg-orange-100 dark:hover:bg-orange-500/40 lg:text-base xl:px-5"
                         >
                           مشاهده و سفارش
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -841,26 +844,26 @@
             class="flex items-center justify-center p-3 gap-9"
           >
             <div @click="show = 1" class="flex items-center">
-              <svg
-                :class="show===1 ? 'text-blue-950 dark:text-gray-100':'text-gray-400'"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6 hover:text-gray-500"
-              >
-                <path
-                  d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z"
-                />
-                <path
-                  d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z"
-                />
-              </svg>
-              <p
-                x-show="show===1"
-                class="text-lg font-medium text-blue-950 dark:text-gray-100"
-              >
-                خانه
-              </p>
+                <svg
+                  :class="show===1 ? 'text-blue-950 dark:text-gray-100':'text-gray-400'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 hover:text-gray-500"
+                >
+                  <path
+                    d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z"
+                  />
+                  <path
+                    d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z"
+                  />
+                </svg>
+                <p
+                  x-show="show===1"
+                  class="text-lg font-medium text-blue-950 dark:text-gray-100"
+                >
+                  خانه
+                </p>
             </div>
             <div @click="show=2" class="flex items-center">
               <svg
