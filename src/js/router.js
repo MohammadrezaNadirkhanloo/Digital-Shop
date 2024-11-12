@@ -1,35 +1,35 @@
 const titr = "Digishop"
 
 const router = {
-  "/public/index.html": {
+  "/Digital-Shop/public/index.html": {
     template: "./index.html",
     title: `${titr}`,
   },
-  "/public/mobile": {
+  "/Digital-Shop/public/mobile": {
     template: "./index.html",
     title: `${titr} | mobile`,
   },
-  "/public/home": {
+  "/Digital-Shop/public/home": {
     template: "./index.html",
     title: `${titr} | home`,
   },
-  "/public/group": {
+  "/Digital-Shop/public/group": {
     template: "./grouping.html",
     title: `${titr} | group`,
   },
-  "/public/watch": {
+  "/Digital-Shop/public/watch": {
     template: "./watch.html",
     title: `${titr} | watch`,
   },
-  "/public/laptop": {
+  "/Digital-Shop/public/laptop": {
     template: "./laptop.html",
     title: `${titr} | laptop`,
   },
-  "/public/sabad": {
+  "/Digital-Shop/public/sabad": {
     template: "./sabad.html",
     title: `${titr} | sabad`,
   },
-  "/public/aboutProduct": {
+  "/Digital-Shop/public/aboutProduct": {
     template: "./aboutProduct.html",
     title: `${titr} | about`,
   },
